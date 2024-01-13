@@ -1,0 +1,128 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+ <meta charset="UTF-8"> <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+ <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+ <title>SOULMATE</title>
+<link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQltTy5F-xG7dIEygP2fwT75hBPau9k9zOy3Q&usqp=CAU">  
+<style>
+Body{
+   font-family:Lato,sans-serif;
+   
+  }
+  .bg-img{
+      background-image:url("https://thumbs.dreamstime.com/b/indian-couple-wedding-engagement-ceremony-india-vector-design-149714517.jpg");
+      min-height:800px;
+      background-position:center;
+      background-repeat:no-repeat;
+      background-size:cover;
+      position:relative;
+     }
+   
+  button{
+         background-color:#4CAF50;
+         width:10%;
+         color:#ffffff;
+         padding:9px 5px;
+         margin:0px opx;
+         border:none;
+         font-size:15px;
+         font-weight:bold;
+         cursor:pointer;
+ form{
+      border:3px solid #f1f1f1;
+     }
+ input[type=text],input[type=password]{
+        width:20%;
+        margin:0px 0;
+        padding:7px 10px;
+        display:inline-block;
+        border:2px solid #ccc;
+        box-sizing:border-box;
+     }
+  .button:hover{background-color:yellow}
+  .button:active{
+          background-color:#3e8e41;
+          box-shadow:0 5px #666;
+          transform:translateY(4px);
+        }      
+   
+.container{
+          position:absolute;
+          padding:17px;
+          top:50;
+          bottom:0;
+          left:28px;
+          right:0;
+          margin:20;
+          max-width:300px;
+         
+       }
+</style>
+</head>
+<body>
+ <div class="topnav" id="navbar">
+              <a href="application form.html">APPLICATION</a>
+        <a href="registration form.html">REGISTER</a>
+        <a href="login form.html">LOGIN</a>
+            <a href="home page.html">HOME</a>
+  </div>
+  <form onsubmit="return validateForm">
+ <div class="container"> 
+  <div class="bg-img">
+ <h1><font size="20px">Registration Form</font></h1> 
+<div class="form-control"> 
+  
+ <form class="container">
+            <b>Username</b>
+            <input type="text" placeholder="Enter your Username" name="Username" required> <br> <br>
+
+            <b>Email-id</b>  
+            <input type="text" placeholder="Enter your Email-id"  
+                    name="Email-id" required> <br> <br> 
+  
+            <b>Password</b>  
+            <input type="password" placeholder="Enter your Password"  
+                    name="password" required> <br> <br>
+            <b>Repeat Password</b>
+            <input type="repeat password" placeholder="Repeat Password"
+                    name="Repeat Password" required> <br> <br>  
+  
+            <button type="submit" class="button">Register</button> <br> <br>
+            <input type="checkbox" checked="checked"> Remember me
+            <button type="button" class="cancelbtn"> Cancel</button> <br> <br>
+            Forgot <a href="#"> password? </a>  
+        </form>  
+    </div>
+<div class"container login">
+    <p>Already have an account? <a href="login.html">LOGIN</a>.</p>
+</div>
+<script>
+    function validateForm(){
+    var name=document.getElementById("name").value;
+    varx=document.getElementById("email").value;
+    var password=document.getElementById("password").value;
+    var confirmPassword=document.getElementById("confirm-password").value;
+    if(username ==""||email ==""||password ==""||confirmPassword==""){
+    alert("please fill in all fields");
+    return false;
+    }
+    if(password.length<7){
+    alert("password must be 7 characters long");
+    return false;
+    }
+    if(password != confirmPassword){
+    alert("Password do not match");
+    return false;
+    }
+    var atposition=x.indexOf("@");
+           var dotposition = x.lastIndexOf(".");
+           if(atposition <1 || dotposition < atposition +2 || dotposition +2>= x.length){
+           alert("please enter a valid e-mail address");
+           return false;}
+      }
+</script> 
+</body>  
+  
+  
+</html>  
